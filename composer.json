@@ -1,0 +1,41 @@
+{
+    "require": {
+        "wdbo/webdocbook": "v1.0.0-alpha"
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-update-cmd": [
+            "WebDocBook\\Composer\\Script\\ClearCache::run",
+            "WebDocBook\\Composer\\Script\\ClearI18n::run"
+        ],
+        "post-install-cmd": [
+            "WebDocBook\\Composer\\Script\\Initialize::run"
+        ],
+        "post-autoload-dump": [
+            "WebDocBook\\Composer\\Script\\ClearCache::run",
+            "WebDocBook\\Composer\\Script\\ClearI18n::run"
+        ],
+        "post-create-project-cmd": [
+            "WebDocBook\\Composer\\Script\\Initialize::run"
+        ],
+        "wdb-clear-cache": [
+            "WebDocBook\\Composer\\Script\\ClearCache::run"
+        ],
+        "wdb-clearcache": [
+            "WebDocBook\\Composer\\Script\\ClearCache::run"
+        ],
+        "wdb-clear-i18n": [
+            "WebDocBook\\Composer\\Script\\ClearI18n::run"
+        ],
+        "wdb-flush": [
+            "WebDocBook\\Composer\\Script\\ClearCache::run",
+            "WebDocBook\\Composer\\Script\\ClearI18n::run"
+        ],
+        "wdb-init": [
+            "WebDocBook\\Composer\\Script\\Initialize::run"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

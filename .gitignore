@@ -1,0 +1,43 @@
+# .gitignore
+# Read about how to use .gitignore: http://help.github.com/articles/ignoring-files
+
+# Specifics
+user/*
+www/webwebdocbook_assets/user/*
+var/*
+tmp/*
+dev/*
+phpdoc/*
+src/vendor/*
+composer.lock
+composer.phar
+#build/*
+
+# Web
+www/*
+!www/webdocbook_assets
+!www/index.php
+
+# assets dependencies
+www/webdocbook_assets/vendor/bootstrap/*
+www/webdocbook_assets/vendor/fontawesome/*
+!www/webdocbook_assets/vendor/fontawesome/css
+!www/webdocbook_assets/vendor/fontawesome/fonts
+www/webdocbook_assets/vendor/html5shiv/*
+www/webdocbook_assets/vendor/jquery/*
+www/webdocbook_assets/vendor/jquery.tablesorter/*
+!www/webdocbook_assets/vendor/jquery.tablesorter/js
+!www/webdocbook_assets/vendor/jquery.tablesorter/css
+www/webdocbook_assets/vendor/jquery.highlight/*
+!www/webdocbook_assets/vendor/jquery.highlight/*.css
+!www/webdocbook_assets/vendor/jquery.highlight/*.js
+!www/webdocbook_assets/vendor/*/dist/
+!www/webdocbook_assets/vendor/*/.bower.json
+
+# webdocbook.com
+.devtools
+bin/*
+vendor/*
+
+# Hack
+!.gitkeep
