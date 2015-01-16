@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>WebDocBook\Controller\DefaultController | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../WebDocBook/Controller.html">WebDocBook\Controller</a>\DefaultController</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>DefaultController</strong>        extends <a href="../../WebDocBook/Abstracts/AbstractController.html"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a></p>
+
+            <div class="description">
+            <p>Class DefaultController</p>
+            <p>This is the default controller of WebDocBook, which may
+handle most of the requests.</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(string $path = null)
+                    <p>
+</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../WebDocBook/Abstracts/AbstractController.html#method___construct"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="WebDocBook\Abstracts\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_setPath">setPath</a>(string $path)
+                    <p>Define the path of the document to treat</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../WebDocBook/Abstracts/AbstractController.html#method_setPath"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getPath">getPath</a>()
+                    <p>Get the path of the document to treat</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../WebDocBook/Abstracts/AbstractController.html#method_getPath"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_indexAction">indexAction</a>(string $path)
+                    <p>Default action</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_directoryAction">directoryAction</a>(string $path)
+                    <p>Directory path action</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_fileAction">fileAction</a>(string $path)
+                    <p>File path action</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_rssFeedAction">rssFeedAction</a>(string $path)
+                    <p>RSS action for concerned path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_sitemapAction">sitemapAction</a>(string $path)
+                    <p>Sitemap action for a path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_htmlOnlyAction">htmlOnlyAction</a>(string $path)
+                    <p>HTML only version of a path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_plainTextAction">plainTextAction</a>(string $path)
+                    <p>Raw plain text action of a path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_downloadAction">downloadAction</a>(string $path)
+                    <p>Download action of a path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_searchAction">searchAction</a>(string $path)
+                    <p>Global search action of a path</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">in <a href="../../WebDocBook/Abstracts/AbstractController.html#method___construct"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a> at line 51</div>
+        <code>            public            
+    <strong>__construct</strong>(string $path = null)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPath">
+        <div class="location">in <a href="../../WebDocBook/Abstracts/AbstractController.html#method_setPath"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a> at line 72</div>
+        <code>            public            <abbr title="WebDocBook\Abstracts\$this">$this</abbr>
+    <strong>setPath</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Define the path of the document to treat</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="WebDocBook\Abstracts\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPath">
+        <div class="location">in <a href="../../WebDocBook/Abstracts/AbstractController.html#method_getPath"><abbr title="WebDocBook\Abstracts\AbstractController">AbstractController</abbr></a> at line 89</div>
+        <code>            public            string
+    <strong>getPath</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the path of the document to treat</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_indexAction">
+        <div class="location">at line 47</div>
+        <code>            public            array
+    <strong>indexAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Default action</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_directoryAction">
+        <div class="location">at line 63</div>
+        <code>            public            array
+    <strong>directoryAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Directory path action</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fileAction">
+        <div class="location">at line 118</div>
+        <code>            public            array
+    <strong>fileAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>File path action</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_rssFeedAction">
+        <div class="location">at line 157</div>
+        <code>            public            array
+    <strong>rssFeedAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>RSS action for concerned path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sitemapAction">
+        <div class="location">at line 210</div>
+        <code>            public            array
+    <strong>sitemapAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Sitemap action for a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_htmlOnlyAction">
+        <div class="location">at line 243</div>
+        <code>            public            array
+    <strong>htmlOnlyAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>HTML only version of a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_plainTextAction">
+        <div class="location">at line 274</div>
+        <code>            public            array
+    <strong>plainTextAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Raw plain text action of a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_downloadAction">
+        <div class="location">at line 301</div>
+        <code>            public            
+    <strong>downloadAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Download action of a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_searchAction">
+        <div class="location">at line 329</div>
+        <code>            public            array
+    <strong>searchAction</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>Global search action of a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../WebDocBook/Exception/NotFoundException.html"><abbr title="WebDocBook\Exception\NotFoundException">NotFoundException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

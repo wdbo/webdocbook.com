@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>WebDocBook\Kernel | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../classes.html">Classes</a></li>
+                            <li><a href="../namespaces.html">Namespaces</a></li>
+                        <li><a href="../interfaces.html">Interfaces</a></li>
+            <li><a href="../traits.html">Traits</a></li>
+            <li><a href="../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../WebDocBook.html">WebDocBook</a>\Kernel</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Kernel</strong></p>
+
+            <div class="description">
+            <p>Class Kernel</p>
+            <p>This is the central kernel of WebDocBook, fully static.</p>
+
+<p>It only throws "classic" <code>\Exception</code> as it is used by Composer's
+commands scripts (when the namespace is not yet loaded).</p>
+
+<p>The <code>$_defaults</code> table defines default required paths and variables.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_debug_vars">
+                                                            
+                </td>
+                <td>$debug_vars</td>
+                <td class="last">
+</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_debug">debug</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method___set_state">__set_state</a>(array $vars)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;void
+                </td>
+                <td class="last">
+                    <a href="#method_init">init</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;void
+                </td>
+                <td class="last">
+                    <a href="#method_boot">boot</a>(bool $soft_boot = false)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isDevMode">isDevMode</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getConfig">getConfig</a>(string $name = null, mixed $default = null, string $scope = &#039;webdocbook&#039;)
+                    <p>Get the value of a specific option with depth</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;void
+                </td>
+                <td class="last">
+                    <a href="#method_setConfig">setConfig</a>(mixed $value, string $scope)
+                    <p>Set an array of options</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(<abbr title="WebDocBook\$name">$name</abbr> $name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getPath">getPath</a>(string $name, bool $local = false, string $base_path = &#039;app_base_path&#039;)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;null|string
+                </td>
+                <td class="last">
+                    <a href="#method_findDocument">findDocument</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array|null
+                </td>
+                <td class="last">
+                    <a href="#method_findController">findController</a>(<abbr title="WebDocBook\$route">$route</abbr> $route)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_findTemplate">findTemplate</a>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;null|string
+                </td>
+                <td class="last">
+                    <a href="#method_fallbackFinder">fallbackFinder</a>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename, string $filetype)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_installConfig">installConfig</a>()
+                    <p>Install WebDocBook's config files</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_clearCache">clearCache</a>()
+                    <p>Clear WebDocBook's cache (var/cache/)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_clearI18n">clearI18n</a>()
+                    <p>Clear WebDocBook's language files (var/i18n/)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_ensurePathExists">ensurePathExists</a>(<abbr title="WebDocBook\$path_name">$path_name</abbr> $path_name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_ensurePathIsWritable">ensurePathIsWritable</a>(<abbr title="WebDocBook\$path_name">$path_name</abbr> $path_name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array
+                </td>
+                <td class="last">
+                    <a href="#method_parseIniFile">parseIniFile</a>(<abbr title="WebDocBook\$file">$file</abbr> $file)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_remove">remove</a>(string $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_debug">
+        <div class="location">at line 92</div>
+        <code>        static    public            
+    <strong>debug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___set_state">
+        <div class="location">at line 102</div>
+        <code>        static    public            
+    <strong>__set_state</strong>(array $vars)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$vars</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_init">
+        <div class="location">at line 117</div>
+        <code>        static    public            void
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_boot">
+        <div class="location">at line 127</div>
+        <code>        static    public            void
+    <strong>boot</strong>(bool $soft_boot = false)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$soft_boot</td>
+                <td>Set to <code>true</code> to not load configuration (during Composer installation)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isDevMode">
+        <div class="location">at line 263</div>
+        <code>        static    public            bool
+    <strong>isDevMode</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfig">
+        <div class="location">at line 277</div>
+        <code>        static    public            mixed
+    <strong>getConfig</strong>(string $name = null, mixed $default = null, string $scope = &#039;webdocbook&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Get the value of a specific option with depth</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value to return if so (<code>null</code> by default)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry if it is not defined in the <code>$name</code> parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The value retrieved in the registry or the default value otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setConfig">
+        <div class="location">at line 301</div>
+        <code>        static    public            void
+    <strong>setConfig</strong>(mixed $value, string $scope)</code>
+    </h3>
+    <div class="details">
+        <p>Set an array of options</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The array of values to set for the configuration entry</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 311</div>
+        <code>        static    public            mixed
+    <strong>get</strong>(<abbr title="WebDocBook\$name">$name</abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$name">$name</abbr></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPath">
+        <div class="location">at line 325</div>
+        <code>        static    public            string
+    <strong>getPath</strong>(string $name, bool $local = false, string $base_path = &#039;app_base_path&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$local</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findDocument">
+        <div class="location">at line 357</div>
+        <code>        static    public            null|string
+    <strong>findDocument</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>null|string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findController">
+        <div class="location">at line 374</div>
+        <code>        static    public            array|null
+    <strong>findController</strong>(<abbr title="WebDocBook\$route">$route</abbr> $route)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$route">$route</abbr></td>
+                <td>$route</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findTemplate">
+        <div class="location">at line 410</div>
+        <code>        static    public            string
+    <strong>findTemplate</strong>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$filename">$filename</abbr></td>
+                <td>$filename</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fallbackFinder">
+        <div class="location">at line 421</div>
+        <code>        static    public            null|string
+    <strong>fallbackFinder</strong>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename, string $filetype)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$filename">$filename</abbr></td>
+                <td>$filename</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filetype</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>null|string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_installConfig">
+        <div class="location">at line 448</div>
+        <code>        static    public            bool
+    <strong>installConfig</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Install WebDocBook's config files</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_clearCache">
+        <div class="location">at line 479</div>
+        <code>        static    public            bool
+    <strong>clearCache</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Clear WebDocBook's cache (var/cache/)</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_clearI18n">
+        <div class="location">at line 489</div>
+        <code>        static    public            bool
+    <strong>clearI18n</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Clear WebDocBook's language files (var/i18n/)</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ensurePathExists">
+        <div class="location">at line 503</div>
+        <code>        static    public            bool
+    <strong>ensurePathExists</strong>(<abbr title="WebDocBook\$path_name">$path_name</abbr> $path_name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path_name">$path_name</abbr></td>
+                <td>$path_name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ensurePathIsWritable">
+        <div class="location">at line 518</div>
+        <code>        static    public            bool
+    <strong>ensurePathIsWritable</strong>(<abbr title="WebDocBook\$path_name">$path_name</abbr> $path_name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path_name">$path_name</abbr></td>
+                <td>$path_name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseIniFile">
+        <div class="location">at line 533</div>
+        <code>        static    public            array
+    <strong>parseIniFile</strong>(<abbr title="WebDocBook\$file">$file</abbr> $file)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$file">$file</abbr></td>
+                <td>$file</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_remove">
+        <div class="location">at line 556</div>
+        <code>        static    public            bool
+    <strong>remove</strong>(string $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

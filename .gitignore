@@ -14,9 +14,9 @@ composer.phar
 #build/*
 
 # Web
-www/*
-!www/webdocbook_assets
-!www/index.php
+#www/*
+#!www/webdocbook_assets
+#!www/index.php
 
 # assets dependencies
 www/webdocbook_assets/vendor/bootstrap/*

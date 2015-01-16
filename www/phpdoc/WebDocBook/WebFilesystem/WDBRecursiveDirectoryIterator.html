@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>WebDocBook\WebFilesystem\WDBRecursiveDirectoryIterator | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../WebDocBook/WebFilesystem.html">WebDocBook\WebFilesystem</a>\WDBRecursiveDirectoryIterator</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>WDBRecursiveDirectoryIterator</strong>        extends <abbr title="WebFilesystem\WebRecursiveDirectoryIterator">WebRecursiveDirectoryIterator</abbr></p>
+
+            <div class="description">
+            <p>Class WDBRecursiveDirectoryIterator</p>
+            <p>
+</p>
+        </div>
+    
+            <h2>Constants</h2>
+
+            <table>
+                    <tr>
+                <td>CURRENT_AS_WDBFILE</td>
+                <td class="last">
+                    <p><em>New flag to make <code>current()</code> returns a <code>WDBFile</code> object</em></p>
+                    <p>It is part of the default object's flags</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>($path, $flags = 16448, $file_validation_callback = &#039;WebDocBook\\WebFilesystem\\WDBRecursiveDirectoryIterator::fileValidation&#039;, $directory_validation_callback = &#039;WebDocBook\\WebFilesystem\\WDBRecursiveDirectoryIterator::dirValidation&#039;)
+                    <p>Constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_fileValidation">fileValidation</a>(<abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr> $file_path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_dirValidation">dirValidation</a>(<abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr> $file_path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_current">current</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 54</div>
+        <code>            public            
+    <strong>__construct</strong>($path, $flags = 16448, $file_validation_callback = &#039;WebDocBook\\WebFilesystem\\WDBRecursiveDirectoryIterator::fileValidation&#039;, $directory_validation_callback = &#039;WebDocBook\\WebFilesystem\\WDBRecursiveDirectoryIterator::dirValidation&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p>Default flags are :</p>
+
+<pre><code> WebFilesystemIterator::KEY_AS_PATHNAME | self::CURRENT_AS_WDBFILE | WebFilesystemIterator::SKIP_DOTTED
+</code></pre>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$flags</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$file_validation_callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$directory_validation_callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fileValidation">
+        <div class="location">at line 66</div>
+        <code>        static    public            bool
+    <strong>fileValidation</strong>(<abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr> $file_path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr></td>
+                <td>$file_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dirValidation">
+        <div class="location">at line 75</div>
+        <code>        static    public            bool
+    <strong>dirValidation</strong>(<abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr> $file_path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\WebFilesystem\$file_path">$file_path</abbr></td>
+                <td>$file_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_current">
+        <div class="location">at line 83</div>
+        <code>            public            mixed
+    <strong>current</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

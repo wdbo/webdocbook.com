@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>WebDocBook\Helper | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../classes.html">Classes</a></li>
+                            <li><a href="../namespaces.html">Namespaces</a></li>
+                        <li><a href="../interfaces.html">Interfaces</a></li>
+            <li><a href="../traits.html">Traits</a></li>
+            <li><a href="../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../WebDocBook.html">WebDocBook</a>\Helper</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Helper</strong></p>
+
+            <div class="description">
+            <p>Class Helper</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_log">log</a>(<abbr title="WebDocBook\$message">$message</abbr> $message, string $level = &#039;debug&#039;, array $context = array(), null $logname = null)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getSafeIdString">getSafeIdString</a>(<abbr title="WebDocBook\$string">$string</abbr> $string)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getSlug">getSlug</a>(<abbr title="WebDocBook\$string">$string</abbr> $string)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_buildPageTitle">buildPageTitle</a>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array
+                </td>
+                <td class="last">
+                    <a href="#method_getBreadcrumbs">getBreadcrumbs</a>(null $path = null)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getSecuredRealpath">getSecuredRealpath</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getRelativePath">getRelativePath</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getAbsolutePath">getAbsolutePath</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getAbsoluteRoute">getAbsoluteRoute</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_ensureDirectoryExists">ensureDirectoryExists</a>(<abbr title="WebDocBook\$directory">$directory</abbr> $directory)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getDateTimeFromTimestamp">getDateTimeFromTimestamp</a>(<abbr title="WebDocBook\$timestamp">$timestamp</abbr> $timestamp)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getRoute">getRoute</a>(<abbr title="WebDocBook\$path">$path</abbr> $path, null $type = null, bool $with_interface = false)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;int
+                </td>
+                <td class="last">
+                    <a href="#method_getDirectorySize">getDirectorySize</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_fetchArguments">fetchArguments</a>(string $_class = null, string $_method = null, mixed $args = null)
+                    <p>Launch a class's method fetching arguments</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array|null
+                </td>
+                <td class="last">
+                    <a href="#method_makeSearch">makeSearch</a>(<abbr title="WebDocBook\$regexp">$regexp</abbr> $regexp, null $path = null)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;int|mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getFileLinesCount">getFileLinesCount</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array
+                </td>
+                <td class="last">
+                    <a href="#method_getProfiler">getProfiler</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isTranslationFile">isTranslationFile</a>(<abbr title="WebDocBook\$path">$path</abbr> $path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isFileValid">isFileValid</a>(<abbr title="WebDocBook\$file_path">$file_path</abbr> $file_path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isDirValid">isDirValid</a>(<abbr title="WebDocBook\$file_path">$file_path</abbr> $file_path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array|null
+                </td>
+                <td class="last">
+                    <a href="#method_getGitConfig">getGitConfig</a>(<abbr title="WebDocBook\$repo_path">$repo_path</abbr> $repo_path)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed|string
+                </td>
+                <td class="last">
+                    <a href="#method_rssEncode">rssEncode</a>(<abbr title="WebDocBook\$str">$str</abbr> $str, int $cut = 800)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getFlatDirscans">getFlatDirscans</a>(<abbr title="WebDocBook\$dirscan">$dirscan</abbr> $dirscan, bool $order_by_date = false)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getIcon">getIcon</a>(null $type = null, string $class = &#039;&#039;)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_log">
+        <div class="location">at line 46</div>
+        <code>        static    public            
+    <strong>log</strong>(<abbr title="WebDocBook\$message">$message</abbr> $message, string $level = &#039;debug&#039;, array $context = array(), null $logname = null)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$message">$message</abbr></td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$level</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$logname</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSafeIdString">
+        <div class="location">at line 55</div>
+        <code>        static    public            string
+    <strong>getSafeIdString</strong>(<abbr title="WebDocBook\$string">$string</abbr> $string)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$string">$string</abbr></td>
+                <td>$string</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSlug">
+        <div class="location">at line 66</div>
+        <code>        static    public            mixed
+    <strong>getSlug</strong>(<abbr title="WebDocBook\$string">$string</abbr> $string)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$string">$string</abbr></td>
+                <td>$string</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_buildPageTitle">
+        <div class="location">at line 75</div>
+        <code>        static    public            string
+    <strong>buildPageTitle</strong>(<abbr title="WebDocBook\$filename">$filename</abbr> $filename)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$filename">$filename</abbr></td>
+                <td>$filename</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBreadcrumbs">
+        <div class="location">at line 89</div>
+        <code>        static    public            array
+    <strong>getBreadcrumbs</strong>(null $path = null)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>null</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSecuredRealpath">
+        <div class="location">at line 103</div>
+        <code>        static    public            mixed
+    <strong>getSecuredRealpath</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRelativePath">
+        <div class="location">at line 112</div>
+        <code>        static    public            mixed
+    <strong>getRelativePath</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAbsolutePath">
+        <div class="location">at line 121</div>
+        <code>        static    public            string
+    <strong>getAbsolutePath</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAbsoluteRoute">
+        <div class="location">at line 131</div>
+        <code>        static    public            string
+    <strong>getAbsoluteRoute</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ensureDirectoryExists">
+        <div class="location">at line 143</div>
+        <code>        static    public            bool
+    <strong>ensureDirectoryExists</strong>(<abbr title="WebDocBook\$directory">$directory</abbr> $directory)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$directory">$directory</abbr></td>
+                <td>$directory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDateTimeFromTimestamp">
+        <div class="location">at line 164</div>
+        <code>        static    public            <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getDateTimeFromTimestamp</strong>(<abbr title="WebDocBook\$timestamp">$timestamp</abbr> $timestamp)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$timestamp">$timestamp</abbr></td>
+                <td>$timestamp</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRoute">
+        <div class="location">at line 177</div>
+        <code>        static    public            string
+    <strong>getRoute</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path, null $type = null, bool $with_interface = false)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$with_interface</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDirectorySize">
+        <div class="location">at line 196</div>
+        <code>        static    public            int
+    <strong>getDirectorySize</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchArguments">
+        <div class="location">at line 221</div>
+        <code>        static    public            mixed
+    <strong>fetchArguments</strong>(string $_class = null, string $_method = null, mixed $args = null)</code>
+    </h3>
+    <div class="details">
+        <p>Launch a class's method fetching arguments</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$_class</td>
+                <td>The class name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$_method</td>
+                <td>The class method name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$args</td>
+                <td>A set of arguments to fetch</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_makeSearch">
+        <div class="location">at line 243</div>
+        <code>        static    public            array|null
+    <strong>makeSearch</strong>(<abbr title="WebDocBook\$regexp">$regexp</abbr> $regexp, null $path = null)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$regexp">$regexp</abbr></td>
+                <td>$regexp</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFileLinesCount">
+        <div class="location">at line 334</div>
+        <code>        static    public            int|mixed
+    <strong>getFileLinesCount</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int|mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getProfiler">
+        <div class="location">at line 349</div>
+        <code>        static    public            array
+    <strong>getProfiler</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isTranslationFile">
+        <div class="location">at line 368</div>
+        <code>        static    public            bool
+    <strong>isTranslationFile</strong>(<abbr title="WebDocBook\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isFileValid">
+        <div class="location">at line 378</div>
+        <code>        static    public            bool
+    <strong>isFileValid</strong>(<abbr title="WebDocBook\$file_path">$file_path</abbr> $file_path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$file_path">$file_path</abbr></td>
+                <td>$file_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isDirValid">
+        <div class="location">at line 391</div>
+        <code>        static    public            bool
+    <strong>isDirValid</strong>(<abbr title="WebDocBook\$file_path">$file_path</abbr> $file_path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$file_path">$file_path</abbr></td>
+                <td>$file_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGitConfig">
+        <div class="location">at line 403</div>
+        <code>        static    public            array|null
+    <strong>getGitConfig</strong>(<abbr title="WebDocBook\$repo_path">$repo_path</abbr> $repo_path)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$repo_path">$repo_path</abbr></td>
+                <td>$repo_path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_rssEncode">
+        <div class="location">at line 424</div>
+        <code>        static    public            mixed|string
+    <strong>rssEncode</strong>(<abbr title="WebDocBook\$str">$str</abbr> $str, int $cut = 800)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$str">$str</abbr></td>
+                <td>$str</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$cut</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed|string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFlatDirscans">
+        <div class="location">at line 436</div>
+        <code>        static    public            mixed
+    <strong>getFlatDirscans</strong>(<abbr title="WebDocBook\$dirscan">$dirscan</abbr> $dirscan, bool $order_by_date = false)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\$dirscan">$dirscan</abbr></td>
+                <td>$dirscan</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$order_by_date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getIcon">
+        <div class="location">at line 488</div>
+        <code>        static    public            string
+    <strong>getIcon</strong>(null $type = null, string $class = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>null</td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

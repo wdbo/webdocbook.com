@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>WebDocBook\Util\Filesystem | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../WebDocBook/Util.html">WebDocBook\Util</a>\Filesystem</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Filesystem</strong></p>
+
+            <div class="description">
+            <p>Class Filesystem</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_slashDirname">slashDirname</a>(string $dirname = null)
+                    <p>Get a dirname with one and only trailing slash</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isGitClone">isGitClone</a>(string $path = null)
+                    <p>Test if a path seems to be a git clone</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isDotPath">isDotPath</a>(string $path = null)
+                    <p>Test if a filename seems to have a dot as first character</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_ensureExists">ensureExists</a>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)
+                    <p>Test if a directory exists and try to create it if so</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_ensureIsWritable">ensureIsWritable</a>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)
+                    <p>Test if a path exists and is writable</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_remove">remove</a>(string $path, bool $parent = true)
+                    <p>Try to remove a path</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;array|bool
+                </td>
+                <td class="last">
+                    <a href="#method_parseIni">parseIni</a>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)
+                    <p>Read and parse a INI content file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool|mixed
+                </td>
+                <td class="last">
+                    <a href="#method_parseJson">parseJson</a>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)
+                    <p>Read and parse a JSON content file</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_slashDirname">
+        <div class="location">at line 38</div>
+        <code>        static    public            string
+    <strong>slashDirname</strong>(string $dirname = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get a dirname with one and only trailing slash</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isGitClone">
+        <div class="location">at line 50</div>
+        <code>        static    public            bool
+    <strong>isGitClone</strong>(string $path = null)</code>
+    </h3>
+    <div class="details">
+        <p>Test if a path seems to be a git clone</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isDotPath">
+        <div class="location">at line 63</div>
+        <code>        static    public            bool
+    <strong>isDotPath</strong>(string $path = null)</code>
+    </h3>
+    <div class="details">
+        <p>Test if a filename seems to have a dot as first character</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ensureExists">
+        <div class="location">at line 75</div>
+        <code>        static    public            bool
+    <strong>ensureExists</strong>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>Test if a directory exists and try to create it if so</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\Util\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ensureIsWritable">
+        <div class="location">at line 90</div>
+        <code>        static    public            bool
+    <strong>ensureIsWritable</strong>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>Test if a path exists and is writable</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\Util\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_remove">
+        <div class="location">at line 106</div>
+        <code>        static    public            bool
+    <strong>remove</strong>(string $path, bool $parent = true)</code>
+    </h3>
+    <div class="details">
+        <p>Try to remove a path</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$parent</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseIni">
+        <div class="location">at line 141</div>
+        <code>        static    public            array|bool
+    <strong>parseIni</strong>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>Read and parse a INI content file</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\Util\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseJson">
+        <div class="location">at line 158</div>
+        <code>        static    public            bool|mixed
+    <strong>parseJson</strong>(<abbr title="WebDocBook\Util\$path">$path</abbr> $path)</code>
+    </h3>
+    <div class="details">
+        <p>Read and parse a JSON content file</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="WebDocBook\Util\$path">$path</abbr></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool|mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
