@@ -1,0 +1,494 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1cf9848cc0b7c7eb17cf33523fec64e4",
+    "packages": [
+        {
+            "name": "atelierspierrot/internationalization",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atelierspierrot/internationalization.git",
+                "reference": "f1facbef11c95aef9e587b3cd31b1d4b3682bd85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atelierspierrot/internationalization/zipball/f1facbef11c95aef9e587b3cd31b1d4b3682bd85",
+                "reference": "f1facbef11c95aef9e587b3cd31b1d4b3682bd85",
+                "shasum": ""
+            },
+            "require": {
+                "atelierspierrot/library": "1.*",
+                "atelierspierrot/patterns": "1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "sami/sami": "dev-master",
+                "twig/extensions": "dev-master",
+                "twig/twig": "1.*"
+            },
+            "type": "library",
+            "extra": {
+                "views-functions": "src/I18n/aliases.php",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "I18n": "src"
+                },
+                "files": [
+                    "src/I18n/aliases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Cassat",
+                    "email": "me@e-piwi.fr",
+                    "homepage": "http://github.com/piwi"
+                },
+                {
+                    "name": "Les Ateliers Pierrot & contributors",
+                    "email": "contact@ateliers-pierrot.fr",
+                    "homepage": "http://www.ateliers-pierrot.fr/"
+                }
+            ],
+            "description": "A PHP package to manage i18n: translations, pluralization and date formats according to a localization.",
+            "homepage": "http://github.com/atelierspierrot/internationalization",
+            "keywords": [
+                "i18n",
+                "internationalization",
+                "localization"
+            ],
+            "time": "2015-01-04 13:36:49"
+        },
+        {
+            "name": "atelierspierrot/library",
+            "version": "v1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atelierspierrot/library.git",
+                "reference": "e886cb02511eeeb3a7e8e884c2d67389c860feb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atelierspierrot/library/zipball/e886cb02511eeeb3a7e8e884c2d67389c860feb4",
+                "reference": "e886cb02511eeeb3a7e8e884c2d67389c860feb4",
+                "shasum": ""
+            },
+            "require": {
+                "atelierspierrot/patterns": "1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "psr/log": "dev-master",
+                "sami/sami": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Library": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Cassat",
+                    "email": "me@e-piwi.fr",
+                    "homepage": "http://github.com/piwi"
+                },
+                {
+                    "name": "Les Ateliers Pierrot & contributors",
+                    "email": "contact@ateliers-pierrot.fr",
+                    "homepage": "http://www.ateliers-pierrot.fr/"
+                }
+            ],
+            "description": "The PHP library package of Les Ateliers Pierrot.",
+            "homepage": "http://github.com/atelierspierrot/library",
+            "keywords": [
+                "helpers",
+                "library"
+            ],
+            "time": "2015-01-07 09:24:44"
+        },
+        {
+            "name": "atelierspierrot/patterns",
+            "version": "v1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atelierspierrot/patterns.git",
+                "reference": "c9b5f278a2e4f594205ad6fb85cefa31fc8efe19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atelierspierrot/patterns/zipball/c9b5f278a2e4f594205ad6fb85cefa31fc8efe19",
+                "reference": "c9b5f278a2e4f594205ad6fb85cefa31fc8efe19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "sami/sami": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Patterns": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Cassat",
+                    "email": "me@e-piwi.fr",
+                    "homepage": "http://github.com/piwi"
+                },
+                {
+                    "name": "Les Ateliers Pierrot & contributors",
+                    "email": "contact@ateliers-pierrot.fr",
+                    "homepage": "http://www.ateliers-pierrot.fr/"
+                }
+            ],
+            "description": "A set of PHP classic interfaces or abstract classes patterns.",
+            "homepage": "http://github.com/atelierspierrot/patterns",
+            "keywords": [
+                "design patterns",
+                "patterns",
+                "php"
+            ],
+            "time": "2014-06-22 09:27:50"
+        },
+        {
+            "name": "atelierspierrot/webfilesystem",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atelierspierrot/webfilesystem.git",
+                "reference": "df9bed4b2f2d5baa05ae2789f27d9f59aea38d01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atelierspierrot/webfilesystem/zipball/df9bed4b2f2d5baa05ae2789f27d9f59aea38d01",
+                "reference": "df9bed4b2f2d5baa05ae2789f27d9f59aea38d01",
+                "shasum": ""
+            },
+            "require": {
+                "atelierspierrot/library": "1.*",
+                "atelierspierrot/patterns": "1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "sami/sami": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "WebFilesystem": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Cassat",
+                    "email": "me@e-piwi.fr",
+                    "homepage": "http://github.com/piwi"
+                },
+                {
+                    "name": "Les Ateliers Pierrot & contributors",
+                    "email": "contact@ateliers-pierrot.fr",
+                    "homepage": "http://www.ateliers-pierrot.fr/"
+                }
+            ],
+            "description": "Extending the SPL file system to manage webserver based file system (such as assets).",
+            "homepage": "http://github.com/atelierspierrot/webfilesystem",
+            "keywords": [
+                "directory",
+                "file",
+                "spl",
+                "webserver"
+            ],
+            "time": "2014-06-22 12:26:38"
+        },
+        {
+            "name": "piwi/markdown-extended",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piwi/markdown-extended.git",
+                "reference": "d6be567e08fcaaae46613ce3a7f430ff1d6cba33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piwi/markdown-extended/zipball/d6be567e08fcaaae46613ce3a7f430ff1d6cba33",
+                "reference": "d6be567e08fcaaae46613ce3a7f430ff1d6cba33",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "replace": {
+                "atelierspierrot/extended-markdown": "dev-master",
+                "atelierspierrot/markdown-extended": "dev-master"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "phpunit/phpunit": "3.7.*",
+                "sami/sami": "2.*"
+            },
+            "bin": [
+                "bin/markdown-extended",
+                "man/markdown-extended.man",
+                "man/markdown-extended-documentation.man"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.*-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MarkdownExtended": "src",
+                    "markdown": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Fletcher T. Penney",
+                    "homepage": "http://fletcherpenney.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "homepage": "http://michelf.com/"
+                },
+                {
+                    "name": "Pierre Cassat",
+                    "homepage": "http://e-piwi.fr/"
+                }
+            ],
+            "description": "A PHP parser for the Markdown Extended syntax",
+            "homepage": "http://github.com/piwi/markdown-extended",
+            "keywords": [
+                "markdown",
+                "markdown extended",
+                "mde"
+            ],
+            "time": "2015-01-03 18:49:22"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "twig/twig",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "e999532003d54534c0a66aa572289ad07195a14f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e999532003d54534c0a66aa572289ad07195a14f",
+                "reference": "e999532003d54534c0a66aa572289ad07195a14f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.17-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-01-14 10:18:41"
+        },
+        {
+            "name": "wdbo/webdocbook",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wdbo/webdocbook.git",
+                "reference": "03074288ce6e23a51e36c4c9ca8f7a62ab31a326"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/03074288ce6e23a51e36c4c9ca8f7a62ab31a326",
+                "reference": "03074288ce6e23a51e36c4c9ca8f7a62ab31a326",
+                "shasum": ""
+            },
+            "require": {
+                "atelierspierrot/internationalization": "1.0.3",
+                "atelierspierrot/library": "1.1.7",
+                "atelierspierrot/patterns": "1.0.8",
+                "atelierspierrot/webfilesystem": "1.0.2",
+                "php": ">=5.3.0",
+                "piwi/markdown-extended": "dev-master",
+                "psr/log": "1.0.0",
+                "twig/twig": "1.*"
+            },
+            "replace": {
+                "atelierspierrot/docbook": "*"
+            },
+            "require-dev": {
+                "dropbox/dropbox-sdk": "1.1.*",
+                "sami/sami": "dev-master"
+            },
+            "type": "project",
+            "extra": {
+                "license_url": "http://github.com/wdbo/webdocbook/blob/master/LICENSE",
+                "license_name": "General Public Licence version 3.0",
+                "branch-alias": {
+                    "dev-master": "1.4.*-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "WebDocBook": "src",
+                    "WebDocBook_": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Cassat & contributors",
+                    "email": "contact@webdocbook.com",
+                    "homepage": "http://webdocbook.com/"
+                }
+            ],
+            "description": "A web book builds from a Markdown contents file system",
+            "homepage": "http://github.com/wdbo/webdocbook",
+            "keywords": [
+                "cms",
+                "markdown",
+                "wiki"
+            ],
+            "time": "2015-01-16 23:52:21"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "wdbo/webdocbook": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -2,14 +2,14 @@
 # Read about how to use .gitignore: http://help.github.com/articles/ignoring-files
 
 # Specifics
-user/*
+#user/*
 www/webwebdocbook_assets/user/*
 var/*
 tmp/*
 dev/*
 phpdoc/*
 src/vendor/*
-composer.lock
+#composer.lock
 composer.phar
 #build/*
 
