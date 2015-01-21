@@ -1,0 +1,102 @@
+{% block html_header %}
+<!DOCTYPE html>
+<html lang="{{ app_cfg.language }}">
+<head>
+    <meta charset="{{ app_cfg.charset }}">
+    <title>{% block title %}{% endblock %} - {{ user_cfg.app_name }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% block metas %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ assets }}{{ user_cfg.app_favicon }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ assets }}{{ user_cfg.app_favicon }}" />
+{% if user_cfg.app_icon_precomposed_sized['144x144'] is not empty %}
+    <link rel="apple-touch-icon-precomposed" href="{{ assets }}{{ user_cfg.app_icon_precomposed_sized['144x144'] }}" sizes="144x144">
+{% endif %}
+{% if user_cfg.app_icon_precomposed_sized['114x114'] is not empty %}
+    <link rel="apple-touch-icon-precomposed" href="{{ assets }}{{ user_cfg.app_icon_precomposed_sized['114x114'] }}" sizes="114x114">
+{% endif %}
+{% if user_cfg.app_icon_precomposed_sized['72x72'] is not empty %}
+    <link rel="apple-touch-icon-precomposed" href="{{ assets }}{{ user_cfg.app_icon_precomposed_sized['72x72'] }}" sizes="72x72">
+{% endif %}
+{% if user_cfg.app_icon_precomposed is not empty %}
+    <link rel="apple-touch-icon-precomposed" href="{{ assets }}{{ user_cfg.app_icon_precomposed }}">
+{% endif %}
+    <!-- Bower dependencies -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="{{ vendor_assets }}html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- DoBook's styles -->
+    <link href="{{ assets }}styles.css" rel="stylesheet">
+    <link href="{{ assets }}styles_print.css" rel="stylesheet" media="print">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body {% block body_attributes %}data-spy="scroll" data-target="#inpage_menu" data-offset="80"{% endblock %}>
+<a id="top"></a>
+
+<div id="wrapper">
+{% endblock html_header %}
+
+{# GLOBAL PAGE CONTENT #}
+{% block body %}{% endblock %}
+
+{# GLOBAL PAGE FOOTER #}
+{% block html_footer %}
+</div>
+{% include WDB.getTemplate('footer') %}
+<div id="messagebox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="messageboxLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="{{ 'Close this modal box'|translate }}">×</button>
+                <h4 class="modal-title" id="messageboxLabel"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<a id="bottom"></a>
+<!-- Bower dependencies -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>$.uiBackCompat = false;</script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- WebDocBook's scripts -->
+<script src="{{ assets }}scripts.js"></script>
+{% block scripts %}
+<script>
+JS_STRS = {
+    tablesorter_th: "{{ 'Sort entries by this column value'|translate }}"
+};
+//console.log('ping console test');
+$(function() {
+    // validation links in footer
+    addCSSValidatorLink('{{ assets }}styles.css');
+    addHTMLValidatorLink();
+    // navbar size
+    initNavbar();
+    // profiler in footer
+    initHandler('profiler');
+    // profiler for not found error
+    initHandler('error-info');
+    // any link with href=#0 does nothing ...
+    $('a[href="#0"]').on('click', function(){ return false; });
+    // translations
+    initTranslator();
+    // delete button in filled search field
+    $('#delete-search').click(function() {
+        $('input.searchField').val('');
+        $('button#form-search-submit').trigger('click');
+    });
+    // all links have tooltips except class=notooltip
+    $('a,.tooltip').not('.notooltip').tooltip();
+    $('input[data-toggle=tooltip],button[data-toggle=tooltip]').tooltip();
+    // popover tool
+    $('.popover-link').tooltip('destroy').popover();
+});
+</script>
+{% endblock %}
+</body>
+</html>
+{% endblock html_footer %}

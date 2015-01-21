@@ -1,0 +1,21 @@
+{% extends WDB.getTemplate('page_layout') %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block metas %}
+{% include 'metas.html.twig' %}
+{% endblock %}
+
+{% block body_attributes %}data-spy="scroll" data-target="#inpage_menu" data-offset="80"{% endblock %}
+
+{% block body %}
+{% include WDB.getTemplate('navbar') %}
+    <div class="container">
+        <div class="row">
+{% include WDB.getTemplate('ltie7_warning') %}
+{% include WDB.getTemplate('breadcrumbs') %}
+{{ content|raw }}
+        </div>
+    </div>
+{% endblock %}
+
