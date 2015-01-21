@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Library\Router | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../classes.html">Classes</a></li>
+                            <li><a href="../namespaces.html">Namespaces</a></li>
+                        <li><a href="../interfaces.html">Interfaces</a></li>
+            <li><a href="../traits.html">Traits</a></li>
+            <li><a href="../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../Library.html">Library</a>\Router</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Router</strong>        implements
+        <a href="../Patterns/Interfaces/RouterInterface.html"><abbr title="Patterns\Interfaces\RouterInterface">RouterInterface</abbr></a></p>
+
+            <div class="description">
+            <p>The global router class</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(string $route = null, array $routes_table = array(), array $arguments_table = array(), array $matchers_table = array())
+                    <p>Construction</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getCollection">getCollection</a>(array $collection)
+                    <p>Get a collection object if it was not</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setUrl">setUrl</a>(string $url)
+                    <p>Set the current URL</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getUrl">getUrl</a>()
+                    <p>Get the current URL</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setRoute">setRoute</a>(string $route)
+                    <p>Set the current route</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getRoute">getRoute</a>()
+                    <p>Get the current route</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setRouteParsed">setRouteParsed</a>(array $infos)
+                    <p>Set the current route parsed infos</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getRouteParsed">getRouteParsed</a>()
+                    <p>Get the current route parsed infos</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setRoutes">setRoutes</a>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)
+                    <p>Set the routes collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getRoutes">getRoutes</a>()
+                    <p>Get the routes collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setArgumentsMap">setArgumentsMap</a>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)
+                    <p>Set the arguments correspondances table like ( true arg in URL => true arg name in the app )</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getArgumentsMap">getArgumentsMap</a>()
+                    <p>Get the arguments table</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setMatchers">setMatchers</a>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)
+                    <p>Set a collection of masks to parse and match a route URL</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getMatchers">getMatchers</a>()
+                    <p>Get the route matcher</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_routeExists">routeExists</a>(string $route)
+                    <p>Check if a route exists</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_generateUrl">generateUrl</a>(mixed $route_infos, string $base_uri = null, string $hash = null, string $separator = &#039;&amp;amp;&#039;)
+                    <p>Build a new route URL</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Library\false">false</abbr>|mixed
+                </td>
+                <td class="last">
+                    <a href="#method_matchUrl">matchUrl</a>(mixed $pathinfo)
+                    <p>Test if an URL has a corresponding route</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_distribute">distribute</a>()
+                    <p>Actually dispatch the current route</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_forward">forward</a>(mixed $pathinfo, string $hash = null)
+                    <p>Forward the application to a new route (no HTTP redirect)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_redirect">redirect</a>(mixed $pathinfo, string $hash = null)
+                    <p>Make a redirection to a new route (HTTP redirect)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_urlEncode">urlEncode</a>(string $str = null, bool $keep_mask = true)
+                    <p>Special 'urlencode' function to only encode strings and let any "%s" mask not encoded</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 78</div>
+        <code>            public            
+    <strong>__construct</strong>(string $route = null, array $routes_table = array(), array $arguments_table = array(), array $matchers_table = array())</code>
+    </h3>
+    <div class="details">
+        <p>Construction</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$routes_table</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments_table</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$matchers_table</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCollection">
+        <div class="location">at line 101</div>
+        <code>            public            <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>getCollection</strong>(array $collection)</code>
+    </h3>
+    <div class="details">
+        <p>Get a collection object if it was not</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$collection</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setUrl">
+        <div class="location">at line 120</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setUrl</strong>(string $url)</code>
+    </h3>
+    <div class="details">
+        <p>Set the current URL</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUrl">
+        <div class="location">at line 131</div>
+        <code>            public            string
+    <strong>getUrl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the current URL</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRoute">
+        <div class="location">at line 142</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setRoute</strong>(string $route)</code>
+    </h3>
+    <div class="details">
+        <p>Set the current route</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRoute">
+        <div class="location">at line 153</div>
+        <code>            public            string
+    <strong>getRoute</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the current route</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRouteParsed">
+        <div class="location">at line 164</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setRouteParsed</strong>(array $infos)</code>
+    </h3>
+    <div class="details">
+        <p>Set the current route parsed infos</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$infos</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRouteParsed">
+        <div class="location">at line 175</div>
+        <code>            public            array
+    <strong>getRouteParsed</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the current route parsed infos</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRoutes">
+        <div class="location">at line 186</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setRoutes</strong>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)</code>
+    </h3>
+    <div class="details">
+        <p>Set the routes collection</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+                <td>$collection</td>
+                <td>A collection object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRoutes">
+        <div class="location">at line 197</div>
+        <code>            public            <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>getRoutes</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the routes collection</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setArgumentsMap">
+        <div class="location">at line 208</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setArgumentsMap</strong>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)</code>
+    </h3>
+    <div class="details">
+        <p>Set the arguments correspondances table like ( true arg in URL => true arg name in the app )</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+                <td>$collection</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getArgumentsMap">
+        <div class="location">at line 219</div>
+        <code>            public            <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>getArgumentsMap</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the arguments table</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setMatchers">
+        <div class="location">at line 230</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>setMatchers</strong>(<a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a> $collection)</code>
+    </h3>
+    <div class="details">
+        <p>Set a collection of masks to parse and match a route URL</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+                <td>$collection</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getMatchers">
+        <div class="location">at line 241</div>
+        <code>            public            <a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>getMatchers</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the route matcher</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_routeExists">
+        <div class="location">at line 252</div>
+        <code>            public            bool
+    <strong>routeExists</strong>(string $route)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a route exists</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td>The route to test</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_generateUrl">
+        <div class="location">at line 317</div>
+        <code>            public            string
+    <strong>generateUrl</strong>(mixed $route_infos, string $base_uri = null, string $hash = null, string $separator = &#039;&amp;amp;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Build a new route URL</p>
+        <p>The class will pass arguments values to any <code>$this-&gt;toUrlParam($value)</code> method for the
+parameter named <code>param</code>.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$route_infos</td>
+                <td>The information about the route to analyze, can be a string route or an array of arguments like <code>param =&gt; value</code></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base_uri</td>
+                <td>The URI to add the new route to</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hash</td>
+                <td>A hash tag to add to the generated URL</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The argument/value separator (default is escaped ampersand : '&amp;')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The application valid URL for the route</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_matchUrl">
+        <div class="location">at line 354</div>
+        <code>            public            <abbr title="Library\false">false</abbr>|mixed
+    <strong>matchUrl</strong>(mixed $pathinfo)</code>
+    </h3>
+    <div class="details">
+        <p>Test if an URL has a corresponding route</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$pathinfo</td>
+                <td>The path information to distribute</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Library\false">false</abbr>|mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_distribute">
+        <div class="location">at line 369</div>
+        <code>            public            <a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a>
+    <strong>distribute</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Actually dispatch the current route</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../Library/Router.html"><abbr title="Library\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td>if no route has been found</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_forward">
+        <div class="location">at line 392</div>
+        <code>            public            void
+    <strong>forward</strong>(mixed $pathinfo, string $hash = null)</code>
+    </h3>
+    <div class="details">
+        <p>Forward the application to a new route (no HTTP redirect)</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$pathinfo</td>
+                <td>The path information to forward to</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hash</td>
+                <td>A hash tag to add to the generated URL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_redirect">
+        <div class="location">at line 403</div>
+        <code>            public            void
+    <strong>redirect</strong>(mixed $pathinfo, string $hash = null)</code>
+    </h3>
+    <div class="details">
+        <p>Make a redirection to a new route (HTTP redirect)</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$pathinfo</td>
+                <td>The path information to redirect to</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hash</td>
+                <td>A hash tag to add to the generated URL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_urlEncode">
+        <div class="location">at line 430</div>
+        <code>        static    public            string
+    <strong>urlEncode</strong>(string $str = null, bool $keep_mask = true)</code>
+    </h3>
+    <div class="details">
+        <p>Special 'urlencode' function to only encode strings and let any "%s" mask not encoded</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The URL or argument to encode</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$keep_mask</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The encoded URL if so</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

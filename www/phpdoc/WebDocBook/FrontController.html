@@ -39,7 +39,37 @@
             <table>
                     <tr>
                 <td class="type">
-                    <abbr title="Library\Command">Command</abbr>
+                    static&nbsp;object
+                </td>
+                <td class="last">
+                    <a href="#method_getInstance">getInstance</a>()
+                    <p>Static object getter: creation of an instance of the current calling class</p>
+                </td>
+                <td><small>from&nbsp;<a href="../Patterns/Abstracts/AbstractSingleton.html#method_getInstance"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;object
+                </td>
+                <td class="last">
+                    <a href="#method_getInstanceByClassname">getInstanceByClassname</a>($classname)
+                    <p>Static object getter: creation of an instance from the class name passed in first argument</p>
+                </td>
+                <td><small>from&nbsp;<a href="../Patterns/Abstracts/AbstractSingleton.html#method_getInstanceByClassname"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___clone">__clone</a>()
+                    <p>Object cloning is avoid</p>
+                </td>
+                <td><small>from&nbsp;<a href="../Patterns/Abstracts/AbstractSingleton.html#method___clone"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../Library/Command.html"><abbr title="Library\Command">Command</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getTerminal">getTerminal</a>()
@@ -119,7 +149,7 @@
                     <abbr title="WebDocBook\Abstracts\$this">$this</abbr>
                 </td>
                 <td class="last">
-                    <a href="#method_setMarkdownParser">setMarkdownParser</a>(<abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr> $parser)
+                    <a href="#method_setMarkdownParser">setMarkdownParser</a>(<a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a> $parser)
                     <p>
 </p>
                 </td>
@@ -127,7 +157,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr>
+                    <a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getMarkdownParser">getMarkdownParser</a>()
@@ -138,7 +168,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Library\Session\FlashSession">FlashSession</abbr>
+                    <a href="../Library/Session/FlashSession.html"><abbr title="Library\Session\FlashSession">FlashSession</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getSession">getSession</a>()
@@ -295,9 +325,95 @@
 
         <h2>Details</h2>
 
-                        <h3 id="method_getTerminal">
+                        <h3 id="method_getInstance">
+        <div class="location">in <a href="../Patterns/Abstracts/AbstractSingleton.html#method_getInstance"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a> at line 73</div>
+        <code>        static    public            object
+    <strong>getInstance</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Static object getter: creation of an instance of the current calling class</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>This may return an instance of an object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getInstanceByClassname">
+        <div class="location">in <a href="../Patterns/Abstracts/AbstractSingleton.html#method_getInstanceByClassname"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a> at line 91</div>
+        <code>        static    public            object
+    <strong>getInstanceByClassname</strong>($classname)</code>
+    </h3>
+    <div class="details">
+        <p>Static object getter: creation of an instance from the class name passed in first argument</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$classname</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>This may return an instance of an object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___clone">
+        <div class="location">in <a href="../Patterns/Abstracts/AbstractSingleton.html#method___clone"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a> at line 136</div>
+        <code>            public            
+    <strong>__clone</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Object cloning is avoid</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>Trying to clone a Singleton object will throw an Exception</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTerminal">
         <div class="location">in <a href="../WebDocBook/Abstracts/AbstractFrontController.html#method_getTerminal"><abbr title="WebDocBook\Abstracts\AbstractFrontController">AbstractFrontController</abbr></a> at line 110</div>
-        <code>            public            <abbr title="Library\Command">Command</abbr>
+        <code>            public            <a href="../Library/Command.html"><abbr title="Library\Command">Command</abbr></a>
     <strong>getTerminal</strong>()</code>
     </h3>
     <div class="details">
@@ -311,7 +427,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Library\Command">Command</abbr></td>
+            <td><a href="../Library/Command.html"><abbr title="Library\Command">Command</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -509,7 +625,7 @@
                 <h3 id="method_setMarkdownParser">
         <div class="location">in <a href="../WebDocBook/Abstracts/AbstractFrontController.html#method_setMarkdownParser"><abbr title="WebDocBook\Abstracts\AbstractFrontController">AbstractFrontController</abbr></a> at line 193</div>
         <code>            public            <abbr title="WebDocBook\Abstracts\$this">$this</abbr>
-    <strong>setMarkdownParser</strong>(<abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr> $parser)</code>
+    <strong>setMarkdownParser</strong>(<a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a> $parser)</code>
     </h3>
     <div class="details">
         <p>
@@ -521,7 +637,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></td>
+                <td><a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a></td>
                 <td>$parser</td>
                 <td>
 </td>
@@ -546,7 +662,7 @@
 
                 <h3 id="method_getMarkdownParser">
         <div class="location">at line 438</div>
-        <code>            public            <abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr>
+        <code>            public            <a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a>
     <strong>getMarkdownParser</strong>()</code>
     </h3>
     <div class="details">
@@ -560,7 +676,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></td>
+            <td><a href="../MarkdownExtended/MarkdownExtended.html"><abbr title="MarkdownExtended\MarkdownExtended">MarkdownExtended</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -573,7 +689,7 @@
 
                 <h3 id="method_getSession">
         <div class="location">in <a href="../WebDocBook/Abstracts/AbstractFrontController.html#method_getSession"><abbr title="WebDocBook\Abstracts\AbstractFrontController">AbstractFrontController</abbr></a> at line 221</div>
-        <code>            public            <abbr title="Library\Session\FlashSession">FlashSession</abbr>
+        <code>            public            <a href="../Library/Session/FlashSession.html"><abbr title="Library\Session\FlashSession">FlashSession</abbr></a>
     <strong>getSession</strong>()</code>
     </h3>
     <div class="details">
@@ -587,7 +703,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Library\Session\FlashSession">FlashSession</abbr></td>
+            <td><a href="../Library/Session/FlashSession.html"><abbr title="Library\Session\FlashSession">FlashSession</abbr></a></td>
             <td>
 </td>
         </tr>

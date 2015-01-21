@@ -24,8 +24,8 @@
     </div>
         <div class="content">
                 <p>    class
-    <strong>WebDocBookHelper</strong>        extends <abbr title="MarkdownExtended\OutputFormat\HTMLHelper">HTMLHelper</abbr>        implements
-        <abbr title="MarkdownExtended\API\OutputFormatHelperInterface">OutputFormatHelperInterface</abbr></p>
+    <strong>WebDocBookHelper</strong>        extends <a href="../../../MarkdownExtended/OutputFormat/HTMLHelper.html"><abbr title="MarkdownExtended\OutputFormat\HTMLHelper">HTMLHelper</abbr></a>        implements
+        <a href="../../../MarkdownExtended/API/OutputFormatHelperInterface.html"><abbr title="MarkdownExtended\API\OutputFormatHelperInterface">OutputFormatHelperInterface</abbr></a></p>
 
             <div class="description">
             <p>WebDocBook output Helper</p>
@@ -39,6 +39,26 @@
             <table>
                     <tr>
                 <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFullContent">getFullContent</a>(<abbr title="MarkdownExtended\OutputFormat\MDE_API\ContentInterface">ContentInterface</abbr> $md_content, <abbr title="MarkdownExtended\OutputFormat\MDE_API\OutputFormatInterface">OutputFormatInterface</abbr> $formatter, bool $full_html = true, bool $include_toc = false, string $html_tag = &#039;&lt;!DOCTYPE html&gt;&#039;)
+                    <p>Get a complete version of parsed content, including metadata, body and notes</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../MarkdownExtended/OutputFormat/HTMLHelper.html#method_getFullContent"><abbr title="MarkdownExtended\OutputFormat\HTMLHelper">HTMLHelper</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getToc">getToc</a>(<a href="../../../MarkdownExtended/API/ContentInterface.html"><abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr></a> $md_content, <a href="../../../MarkdownExtended/API/OutputFormatInterface.html"><abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr></a> $formatter, array $attributes = null)
+                    <p>Build a hierarchical menu</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     static&nbsp;mixed
                 </td>
                 <td class="last">
@@ -48,22 +68,119 @@
                 </td>
                 <td></td>
             </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method_getToc">getToc</a>(<abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr> $md_content, <abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr> $formatter, array $attributes = null)
-                    <p>Build a hierarchical menu</p>
-                </td>
-                <td></td>
-            </tr>
             </table>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method_getConfigOrDefault">
+                        <h3 id="method_getFullContent">
+        <div class="location">in <a href="../../../MarkdownExtended/OutputFormat/HTMLHelper.html#method_getFullContent"><abbr title="MarkdownExtended\OutputFormat\HTMLHelper">HTMLHelper</abbr></a> at line 36</div>
+        <code>            public            string
+    <strong>getFullContent</strong>(<abbr title="MarkdownExtended\OutputFormat\MDE_API\ContentInterface">ContentInterface</abbr> $md_content, <abbr title="MarkdownExtended\OutputFormat\MDE_API\OutputFormatInterface">OutputFormatInterface</abbr> $formatter, bool $full_html = true, bool $include_toc = false, string $html_tag = &#039;&lt;!DOCTYPE html&gt;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Get a complete version of parsed content, including metadata, body and notes</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="MarkdownExtended\OutputFormat\MDE_API\ContentInterface">ContentInterface</abbr></td>
+                <td>$md_content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="MarkdownExtended\OutputFormat\MDE_API\OutputFormatInterface">OutputFormatInterface</abbr></td>
+                <td>$formatter</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$full_html</td>
+                <td>Defines if the metadata must be returned in a <code>&lt;head&gt;</code> block</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$include_toc</td>
+                <td>Include a table-of-content (default is <code>false</code>)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$html_tag</td>
+                <td>Defines the HTML header tag</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getToc">
+        <div class="location">at line 81</div>
+        <code>            public            string
+    <strong>getToc</strong>(<a href="../../../MarkdownExtended/API/ContentInterface.html"><abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr></a> $md_content, <a href="../../../MarkdownExtended/API/OutputFormatInterface.html"><abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr></a> $formatter, array $attributes = null)</code>
+    </h3>
+    <div class="details">
+        <p>Build a hierarchical menu</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../MarkdownExtended/API/ContentInterface.html"><abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr></a></td>
+                <td>$md_content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../MarkdownExtended/API/OutputFormatInterface.html"><abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr></a></td>
+                <td>$formatter</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigOrDefault">
         <div class="location">at line 65</div>
         <code>        static    public            mixed
     <strong>getConfigOrDefault</strong>(string $var)</code>
@@ -91,55 +208,6 @@
                     <table>
         <tr>
             <td>mixed</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_getToc">
-        <div class="location">at line 81</div>
-        <code>            public            string
-    <strong>getToc</strong>(<abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr> $md_content, <abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr> $formatter, array $attributes = null)</code>
-    </h3>
-    <div class="details">
-        <p>Build a hierarchical menu</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="MarkdownExtended\API\ContentInterface">ContentInterface</abbr></td>
-                <td>$md_content</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="MarkdownExtended\API\OutputFormatInterface">OutputFormatInterface</abbr></td>
-                <td>$formatter</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$attributes</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>string</td>
             <td>
 </td>
         </tr>

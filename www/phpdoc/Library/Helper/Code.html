@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Library\Helper\Code | WebDocBook</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">WebDocBook</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Library/Helper.html">Library\Helper</a>\Code</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Code</strong></p>
+
+            <div class="description">
+            <p>Code helper</p>
+            <p>As for all helpers, all methods are statics.</p>
+
+<p>For convenience, the best practice is to use:</p>
+
+<pre><code>use Library\Helper\Code as CodeHelper;
+</code></pre>
+</p>
+        </div>
+    
+            <h2>Constants</h2>
+
+            <table>
+                    <tr>
+                <td>NAMESPACE_SEPARATOR</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPOSER_AUTOLOADER_CLASSNAME</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPOSER_COMMON_NAMESPACES_AUTOLOADER</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getPropertyName">getPropertyName</a>(string $name)
+                    <p>Transforms a property name from CamelCase to underscored</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_getPropertyMethodName">getPropertyMethodName</a>(string $name)
+                    <p>Transform a property name from underscored to CamelCase used in magic method names</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_impelementsInterface">impelementsInterface</a>(string|object $class_name, string $interface_name)
+                    <p>Check if a class implements a certain interface</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_extendsClass">extendsClass</a>(string|object $class_name, string $mother_name)
+                    <p>Check if a class extends a certain class</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_isClassInstance">isClassInstance</a>(object $object, string $class_name)
+                    <p>Check if a an object is an instance of a class</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_namespaceExists">namespaceExists</a>(string $namespace)
+                    <p>Test if a namespace can be found in declared classes or via Composer autoloader if so  This method will search concerned namespace in PHP declared classes namespaces and, if found, in a Composer namespaces mapping usually stored in <code>vendor/composer/autoload_namespaces.php</code>, searching for a directory that should contains the nameapace following the  <a href="https://github.com/php-fig/fig-standards">FIG standards</a>.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_fetchArguments">fetchArguments</a>(string $method_name = null, mixed $arguments = null, string $class_name = null, array $logs = array())
+                    <p>Launch a function or class's method fetching it arguments according to its declaration</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;mixed
+                </td>
+                <td class="last">
+                    <a href="#method_organizeArguments">organizeArguments</a>(string $method_name = null, mixed $arguments = null, string $class_name = null, array $logs = array())
+                    <p>Organize an array of arguments to pass to a function or class's method according to its declaration</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_getPropertyName">
+        <div class="location">at line 50</div>
+        <code>        static    public            string
+    <strong>getPropertyName</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Transforms a property name from CamelCase to underscored</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The property name to transform</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The transformed property name</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>Library\Helper\Text::fromCamelCase()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getPropertyMethodName">
+        <div class="location">at line 62</div>
+        <code>        static    public            string
+    <strong>getPropertyMethodName</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Transform a property name from underscored to CamelCase used in magic method names</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The property name to transform</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The transformed property name</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>Library\Helper\Text::toCamelCase()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_impelementsInterface">
+        <div class="location">at line 74</div>
+        <code>        static    public            bool
+    <strong>impelementsInterface</strong>(string|object $class_name, string $interface_name)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a class implements a certain interface</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|object</td>
+                <td>$class_name</td>
+                <td>The class name to test or a full object of this class</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$interface_name</td>
+                <td>The interface name to test</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_extendsClass">
+        <div class="location">at line 94</div>
+        <code>        static    public            bool
+    <strong>extendsClass</strong>(string|object $class_name, string $mother_name)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a class extends a certain class</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|object</td>
+                <td>$class_name</td>
+                <td>The class name to test or a full object of this class</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mother_name</td>
+                <td>The class name to extend</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isClassInstance">
+        <div class="location">at line 113</div>
+        <code>        static    public            bool
+    <strong>isClassInstance</strong>(object $object, string $class_name)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a an object is an instance of a class</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_namespaceExists">
+        <div class="location">at line 148</div>
+        <code>        static    public            bool
+    <strong>namespaceExists</strong>(string $namespace)</code>
+    </h3>
+    <div class="details">
+        <p>Test if a namespace can be found in declared classes or via Composer autoloader if so  This method will search concerned namespace in PHP declared classes namespaces and, if found, in a Composer namespaces mapping usually stored in <code>vendor/composer/autoload_namespaces.php</code>, searching for a directory that should contains the nameapace following the  <a href="https://github.com/php-fig/fig-standards">FIG standards</a>.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchArguments">
+        <div class="location">at line 213</div>
+        <code>        static    public            mixed
+    <strong>fetchArguments</strong>(string $method_name = null, mixed $arguments = null, string $class_name = null, array $logs = array())</code>
+    </h3>
+    <div class="details">
+        <p>Launch a function or class's method fetching it arguments according to its declaration</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method_name</td>
+                <td>The method name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$arguments</td>
+                <td>A set of arguments to fetch</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td>The class name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$logs</td>
+                <td>Will be filled with indexes <code>miss</code> with missing required arguments and <code>rest</code> with unused <code>$arguments</code> - Passed by reference</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the method is not callable</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_organizeArguments">
+        <div class="location">at line 245</div>
+        <code>        static    public            mixed
+    <strong>organizeArguments</strong>(string $method_name = null, mixed $arguments = null, string $class_name = null, array $logs = array())</code>
+    </h3>
+    <div class="details">
+        <p>Organize an array of arguments to pass to a function or class's method according to its declaration</p>
+        <p>Undefined arguments will be fetched with their default value if available or <code>null</code> otherwise.</p>
+
+<p>If <code>$arguments</code> is not an array, the method will search for the first argument with
+no default value and define it on the <code>$arguments</code> value.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method_name</td>
+                <td>The method name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$arguments</td>
+                <td>A set of arguments to fetch</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td>The class name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$logs</td>
+                <td>Will be filled with indexes <code>miss</code> with missing required arguments and <code>rest</code> with unused <code>$arguments</code> - Passed by reference</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
