@@ -1,6 +1,9 @@
 {
     "require": {
-        "wdbo/webdocbook": "v1.0.0-alpha"
+        "wdbo/webdocbook": "dev-dev"
+    },
+    "autoload": { 
+        "psr-0": {  "App": "user/src" }
     },
     "minimum-stability": "dev",
     "scripts": {
