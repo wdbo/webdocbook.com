@@ -2,7 +2,7 @@
 ===============================================================================
 
 <div class="text-center">
-<a class="btn btn-primary btn-lg" href="http://github.com/wdbo/webdocbook/archive/v1.0.0-alpha.tar.gz" role="button">Download WebDocBook v1.0.0-alpha</a>
+<a class="btn btn-primary btn-lg" href="http://github.com/wdbo/webdocbook/archive/v1.0.0-beta.tar.gz" role="button">Download WebDocBook v1.0.0-beta</a>
 <a class="btn btn-info btn-lg" href="/documentation" role="button">Read the documentation</a>
 <a class="btn btn-info btn-lg" href="http://github.com/wdbo/webdocbook/issues" role="button">Send feedback</a>
 </div>
@@ -11,6 +11,16 @@
 
 This website is under construction for now ... Please come back to visit us in few weeks
 to learn what *WebDocBook* is and how it works ;)
+
+BUT, *WebDocBook* is under [hard development](https://github.com/wdbo/webdocbook/commits/dev) 
+to prepare the first 1.0.0 version. If you are interested in the project and want to be one of 
+its *beta-testers*, you can do so following these steps:
+
+-   get [the last pre-release](http://github.com/wdbo/webdocbook/releases) and read its
+    short "how-to"
+-   send your feedback creating a [bug ticket](http://github.com/wdbo/webdocbook/issues).
+
+**Your help is very useful! Thank you!**
 
 To get more help, follow sources updates and opened issues, go to
 [WebDocBook's repository](http://github.com/wdbo/webdocbook) on GitHub.
