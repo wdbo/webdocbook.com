@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1cf9848cc0b7c7eb17cf33523fec64e4",
+    "hash": "b838d17923ed330c2229c200cec007cf",
     "packages": [
         {
             "name": "atelierspierrot/internationalization",
@@ -364,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e999532003d54534c0a66aa572289ad07195a14f"
+                "reference": "e7c5bde274c22a50ed7d4ae6f4c98a803c2f8e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e999532003d54534c0a66aa572289ad07195a14f",
-                "reference": "e999532003d54534c0a66aa572289ad07195a14f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e7c5bde274c22a50ed7d4ae6f4c98a803c2f8e23",
+                "reference": "e7c5bde274c22a50ed7d4ae6f4c98a803c2f8e23",
                 "shasum": ""
             },
             "require": {
@@ -378,7 +378,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 }
             },
             "autoload": {
@@ -413,7 +413,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-01-14 10:18:41"
+            "time": "2015-01-25 16:01:33"
         },
         {
             "name": "wdbo/webdocbook",
@@ -421,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wdbo/webdocbook.git",
-                "reference": "03074288ce6e23a51e36c4c9ca8f7a62ab31a326"
+                "reference": "dc97155e39c11e5ee6b49fe48c556f5b62e9b485"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/03074288ce6e23a51e36c4c9ca8f7a62ab31a326",
-                "reference": "03074288ce6e23a51e36c4c9ca8f7a62ab31a326",
+                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/dc97155e39c11e5ee6b49fe48c556f5b62e9b485",
+                "reference": "dc97155e39c11e5ee6b49fe48c556f5b62e9b485",
                 "shasum": ""
             },
             "require": {
@@ -450,6 +450,7 @@
             "extra": {
                 "license_url": "http://github.com/wdbo/webdocbook/blob/master/LICENSE",
                 "license_name": "General Public Licence version 3.0",
+                "package_sources": "http://github.com/wdbo/webdocbook",
                 "branch-alias": {
                     "dev-master": "1.4.*-dev"
                 }
@@ -472,13 +473,13 @@
                 }
             ],
             "description": "A web book builds from a Markdown contents file system",
-            "homepage": "http://github.com/wdbo/webdocbook",
+            "homepage": "http://webdocbook.com",
             "keywords": [
                 "cms",
                 "markdown",
                 "wiki"
             ],
-            "time": "2015-01-16 23:52:21"
+            "time": "2015-01-25 16:59:00"
         }
     ],
     "packages-dev": [],
