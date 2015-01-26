@@ -421,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wdbo/webdocbook.git",
-                "reference": "3e39aee67a3b03e2b74185f8ce2e7ef85335d2af"
+                "reference": "41de38e6919d262e9bf532a0844cbae9f36ba67b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/3e39aee67a3b03e2b74185f8ce2e7ef85335d2af",
-                "reference": "3e39aee67a3b03e2b74185f8ce2e7ef85335d2af",
+                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/41de38e6919d262e9bf532a0844cbae9f36ba67b",
+                "reference": "41de38e6919d262e9bf532a0844cbae9f36ba67b",
                 "shasum": ""
             },
             "require": {
@@ -479,7 +479,7 @@
                 "markdown",
                 "wiki"
             ],
-            "time": "2015-01-25 17:59:26"
+            "time": "2015-01-26 00:05:45"
         }
     ],
     "packages-dev": [],
