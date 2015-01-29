@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piwi/markdown-extended.git",
-                "reference": "d6be567e08fcaaae46613ce3a7f430ff1d6cba33"
+                "reference": "ad75d79c90c25c02f36bc29d12eca5b78ab631f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwi/markdown-extended/zipball/d6be567e08fcaaae46613ce3a7f430ff1d6cba33",
-                "reference": "d6be567e08fcaaae46613ce3a7f430ff1d6cba33",
+                "url": "https://api.github.com/repos/piwi/markdown-extended/zipball/ad75d79c90c25c02f36bc29d12eca5b78ab631f9",
+                "reference": "ad75d79c90c25c02f36bc29d12eca5b78ab631f9",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
                 "markdown extended",
                 "mde"
             ],
-            "time": "2015-01-03 18:49:22"
+            "time": "2015-01-26 06:37:07"
         },
         {
             "name": "psr/log",
@@ -421,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wdbo/webdocbook.git",
-                "reference": "41de38e6919d262e9bf532a0844cbae9f36ba67b"
+                "reference": "50136016d9b0442cdb9590cf6584502c5155aff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/41de38e6919d262e9bf532a0844cbae9f36ba67b",
-                "reference": "41de38e6919d262e9bf532a0844cbae9f36ba67b",
+                "url": "https://api.github.com/repos/wdbo/webdocbook/zipball/50136016d9b0442cdb9590cf6584502c5155aff9",
+                "reference": "50136016d9b0442cdb9590cf6584502c5155aff9",
                 "shasum": ""
             },
             "require": {
@@ -479,7 +479,7 @@
                 "markdown",
                 "wiki"
             ],
-            "time": "2015-01-26 00:05:45"
+            "time": "2015-01-29 07:01:41"
         }
     ],
     "packages-dev": [],
