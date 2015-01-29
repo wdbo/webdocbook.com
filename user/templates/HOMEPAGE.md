@@ -2,9 +2,12 @@
 ===============================================================================
 
 <div class="text-center">
-<a class="btn btn-primary btn-lg" href="http://github.com/wdbo/webdocbook/archive/v1.0.0-beta.tar.gz" role="button">Download WebDocBook v1.0.0-beta</a>
-<a class="btn btn-info btn-lg" href="/documentation" role="button">Read the documentation</a>
-<a class="btn btn-info btn-lg" href="http://github.com/wdbo/webdocbook/issues" role="button">Send feedback</a>
+<a class="btn btn-primary btn-lg hidden-xs" href="http://github.com/wdbo/webdocbook/archive/v1.0.0-beta.tar.gz" role="button">Download WebDocBook v1.0.0-beta</a>
+<a class="btn btn-primary visible-xs" href="http://github.com/wdbo/webdocbook/archive/v1.0.0-beta.tar.gz" role="button">Download WebDocBook v1.0.0-beta</a>
+<a class="btn btn-info btn-lg hidden-xs" href="/documentation" role="button">Read the documentation</a>
+<a class="btn btn-info visible-xs" href="/documentation" role="button">Read the documentation</a>
+<a class="btn btn-info btn-lg hidden-xs" href="http://github.com/wdbo/webdocbook/issues" role="button">Send feedback</a>
+<a class="btn btn-info visible-xs" href="http://github.com/wdbo/webdocbook/issues" role="button">Send feedback</a>
 </div>
 
 ----
